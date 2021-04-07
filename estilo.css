@@ -1,0 +1,353 @@
+*{margin: 0; padding: 0;}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Roboto:wght@700&display=swap');
+
+nav{
+	width: 100%;
+	height: 100px;
+	background-color:#121212;
+	text-align: left;
+	padding: 10px;
+	padding-top: 40px;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	display: flex;
+	box-sizing: border-box;	
+	justify-content: justify;
+}
+
+#navegacao{
+	display: flex;
+	justify-content: center;
+}
+
+.bt-gato{
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	margin-right: 100px;
+}
+
+a{
+	font: 1.3rem 'Raleway', sans-serif;
+	text-decoration: none;
+	color: #fff;
+}
+
+.a-menu{
+	margin-left: 70px;
+}
+
+.a-menu:link, .a-menu:visited{
+	color: #FFF;
+}
+
+.a-menu:hover, .a-menu:active{
+	color: #FFE314;
+}
+
+header{
+	width: 100%;
+	height:385px;
+	background-color: #aaa;
+}
+
+.banner{
+	width: 60%;
+	height:500px;
+	position: absolute;
+	top: 140px;
+	left: 260px;
+}
+
+.img-fundo{	
+	width: 100%;
+	height:385px;
+	background-color: #D1A327;
+}
+
+#sobre{
+	padding-left: 260px;
+	width: 60%;
+	margin-bottom: 50px;
+	box-sizing: content-box;
+}
+
+
+
+h1{
+	font: 4rem 'Roboto', sans-serif;
+    color:#FFE314;
+    text-align:center;	
+    margin-top: 200px; 
+    margin-bottom: 80px;
+    background-color: black;
+}
+
+
+h2{
+	font: 4rem 'Roboto', sans-serif;
+    color:#121212;
+    text-align:center;	
+    margin-top: 150px; 
+    margin-bottom: 80px;
+}
+
+h3{
+	font: 3rem 'Roboto', sans-serif;
+    color:#000;
+    text-align:center;	
+    margin-top: 50px; 
+}
+
+h4{
+	color: #121212;
+	font: 1.8rem 'Roboto', sans-serif;
+	margin-top: 10px;
+	box-sizing: content-box;
+}
+
+p{
+	font: 1.4rem  'Raleway', sans-serif;
+	color: #212121;
+	text-align: justify;
+	line-height: 25px;
+	margin-bottom: 30px;	
+}
+
+
+/*produtos*/
+
+#container{
+	display: flex; 
+}
+
+#container-valor{
+	display: flex;
+}
+
+.a-compras{
+	color: #ffe314;
+	font-size: 2rem;
+}
+
+.img-produtos{
+	width: 100%;
+	border-radius: 8px;
+	height: 250px;
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  padding: 10px;
+}
+
+.preço {
+  color: green;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  background-color: #121212;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.card button:hover {
+  opacity: 0.9;
+}
+
+.subtitulo{
+ 	text-align: center;
+ 	font-size: 1.4rem;
+ 	color: #555;
+ }
+
+ #popup{
+	 
+	 width: 20px;
+	 height: 25px;
+	 position: initial;
+	 display: block;
+	 color: #FFE314;
+	 background-color: rgb(180, 76, 76);
+	 align-items: center;
+	 position: fixed;
+	 top: 200px;
+	 z-index: 1;
+ }
+ #propaganda{
+	width: 220px;
+	height: 250px;
+	float: left;
+	
+	
+ }
+
+ /*Encomendas*/
+
+#Encomendas {
+	background-color: #fff;
+}
+
+#Encomendas p{
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+form{
+	width: 400px;
+	margin: 0 auto; 
+}
+
+input, select, textarea	{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	box-sizing: border-box;
+	border: 1px solid #5D4037;
+}
+
+label, fieldset, input, select, textarea{
+	font: 1.2rem 'Raleway', sans-serif;
+	color: #212121;
+}
+
+fieldset{
+	border: 1px solid #5d4037;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+
+#data-hora-num{
+	display: flex;
+}
+
+input[type="radio"], input[type="checkbox"]{
+	width: 15px;
+	height: 15px;
+	margin-left: 40px;
+}
+
+textarea{
+	height: 80px;
+}
+
+#botoes-encomendas{
+	display: flex;
+
+}
+
+input[type="submit"], input[type="reset"]{
+	margin:20px;
+	background-color: #00c853;
+	color: #fff;
+	border: 0;
+	border-radius: 5px;
+}
+
+input[type="reset"]{
+	background-color: #d50000;
+}
+
+
+
+/*footer*/
+
+.social{
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+	position: relative;
+	left: 600px;
+	top: 20px;
+	
+}
+
+.social:hover{
+	opacity: 0.7;
+}
+ 
+footer{
+	width: 100%;
+	height: 100px;
+	background-color: #121212;
+	justify-content: center;
+	margin-top: 50px;
+	position: relative;
+	box-sizing: content-box;
+	cursor: pointer;
+}
+#dev{
+	color: #fff;
+	position: relative;
+	top: 0px;
+	padding-top: 40px;
+	padding-left: 210px;
+}
+ 
+/*fotos*/
+
+* {
+  box-sizing: border-box;
+}
+
+#artigo {
+  background-color: #f1f1f1;
+  font-family: Arial;
+}
+
+.fotos-texto{
+	font-size: 1.5rem;
+	margin-top: 20px;
+	text-align: left;
+	word-spacing: 3px;
+}
+
+.main {
+  margin: 30px;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+  min-height: 600px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+
+

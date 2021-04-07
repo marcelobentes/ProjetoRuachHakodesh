@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Som do Ruach HaKodesh</title>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Marcelo Bentes" />
+	<meta name="keywords" content="Som, Ruach,HaKodesh, instrumentos musicais, guitarra, violão, teclado, bateria, caixa de som, acustica"/>
+	<meta name="description" content="Loja de Som e Instrumentos Musicais"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="validar_cpf.js" type="text/javascript"> </script>
+</head>
+<body>
+	
+<nav>
+	<a class="a-menu" href="#"> HOME </a>
+	<a class="a-menu" href="#sobre"> SOBRE </a>
+	<a class="a-menu" href="#produtos"> PRODUTOS </a>
+	<a class="a-menu" href="#encomendas"> ENCOMENDAS</a>
+</nav>	
+				
+<header>			
+	<img src="img\banner.png" alt="Banner com fundo azul do lado direto um leão e do lado esquerdo um violão preto encostado em uma arvoré, em cima dessa imagem escrito o som do ruach HaKodesh">
+</header>	
+
+<section id="sobre" />
+
+	<article>			
+		<h1>Som do Ruach HaKodesh</h1>
+							
+		<p>Loja dos melhores instrumentos musicais, indo de ambiente iniciante a palco de profissionais.</p>
+		<p >Temos variedades de intrumentos, equipamento de audio, videos, luzes e acessórios para fazer o <b>melhor SOM</b>.
+		Venha nos fazer uma visita e fica a vontade para sentir a melodia de nossos instrumentos, estamos localizado no <b>RIACHO FUNDO II QN99</b>, te esperamos aqui com o melhor atendimento para o nossos clientes.</p>
+		<p>Funcionamento de Segunda à Sexta Das <b>09h as 18h</b> ,Sábado Das <b>09h às 13h !!!</b></p>
+	</article>	
+
+</section>
+
+			
+<section id="produtos"/>
+			
+	<h2>Produtos</h2>
+			
+<div id="container">
+
+	<div class="card">
+		<img class="img-produtos" src="img\violaostrinberg.jpg" width="300" height="290" alt=""/>
+			<div class="card-content">
+				<h3>Violão Strinberg</h3>
+				<p><b> R$ 599,90</b></p>
+			</div>
+			<p><button><a class="a-compras" href="#encomendas">Comprar</a></button></p>
+	</div>
+	<div class="card">
+		<img class="img-produtos" src="img\teclado2.jpg" width="300" height="290" alt=""/>
+			<div class="card-content">
+				<h3>Teclado</h3>
+				<p><b>R$ 600,00</b></p>
+			</div>
+			<p><button><a class="a-compras" href="#encomendas">Comprar</a></button></p>
+	</div>
+	<div class="card">
+		<img class="img-produtos" src="img\bateriaeletronica.jpg" width="300" height="290" alt=""/>
+			<div class="card-content">
+				<h3>Bateria</h3>
+				<p><b>R$ 1800,00</b> </p>
+			</div>
+			<p><button><a class="a-compras" href="#encomendas">Comprar</a></button></p>
+	</div>
+	<div class="card">
+		<img class="img-produtos" src="img\contrabaixo2.jpg" width="300" height="290" alt=""/>
+			<div class="card-content">
+				<h3>Contrabaixo</h3>
+				<p><b>R$ 1360,00</b></p>
+			</div>
+				<p><button><a class="a-compras" href="#encomendas">Comprar</a></button></p>
+	</div>
+</div>	
+
+					
+			
+	</section>
+
+<section id="encomendas" />
+	
+	<h2>Encomendas</h2>
+			
+					<form>
+						<label for="name">Nome:</label><br/>
+						<input id="name" type="text" name="nome_completo" size="80" placeholder="Digite seu nome completo" required=""> <br/>
+						<label for="cpf">Cpf:</label><br/>
+				<input id="cpf" type="text" name="CPF_Informado" maxlength="11" size="80" placeholder="Ex: 12345678996"  required />
+				<br/>
+				<input type="button" name="validar" id="validar" value="Validar CPF" onClick="valida()" required/>
+						<label for="email">E-mail:</label><br/>
+						<input id="email" type="email" name="email" size="80" placeholder="exemplo@gmail.com"/><br/>
+						<label for="fone">Fone:</label><br/>
+						<input id="fone" type="tel" name="fone" size=80" placeholder="(99)99999-9999" /><br/>
+						<label for="produto">Produto:</label><br/>
+						<select id="produto" name="produto">
+							<option>Selecione</option>
+							<option value="violao">Violão</option>
+							<option value="teclado">Teclado</option>
+							<option value="contrabaixo">Contrabaixo</option>
+							<option value="bateria">Bateria</option>
+							<option value="microfone">Microfone</option>
+							<option value="violino">Violino</option>
+							<option value="amplificadoes">Amplificadores</option>
+						</select><br/>
+
+
+
+						<label for="quantidades">Quantidades:</label><br/>
+						<input type="number" name="quantidades" min="1" max="1000" placeholder="Somente númros" />
+						
+						<fieldset>
+							<legend >Forma Retirada</legend>	
+							<input id="delivery" type="radio" name="forma" value="delivery" size="80" /> <label for="delivery">Delivery</label><br/>
+							<input id="local" type="radio" name="forma" value="retirada_local" size="80" /><label for="local"> Retirar no Local</label><br/>
+						</fieldset>
+						<label for="msg">Comentários: </label><br/>
+						<textarea id="msg" cols="69" rows="4">
+						</textarea>
+
+						<div id="botoes">
+							<input type="submit" name="btn-encomendar" value="ENCOMENDAR" />
+							<input type="reset" name="btn-cancelar" value="CANCELAR" />
+						</div>
+					</form>
+
+</section>					
+
+
+<footer>
+		<p>Desenvolvido por <a href="http://instagram.com/marcelo_marmut" target="_blank">Marcelo Bentes</a> - 2020</p>	
+</footer>
+
+</body>
+</html>
